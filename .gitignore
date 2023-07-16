@@ -1,0 +1,21 @@
+# Ignore build output
+dist/
+
+# Ignore generated types
+.astro/
+
+# Ignore dependencies
+node_modules/
+
+# Ignore logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Ignore environment variables
+.env
+.env.production
+
+# Ignore macOS-specific files
+.DS_Store

@@ -1,0 +1,44 @@
+---
+import type { AUTHORS } from "../util/authors";
+
+export interface Props {
+  author: {
+    author: (typeof AUTHORS)[number];
+    posts: number;
+    img: string;
+  };
+}
+
+const {
+  author: { author, posts, img },
+} = Astro.props;
+---
+
+<a
+  href={`/authors/${author.toLocaleLowerCase()}`}
+  rel="prefetch"
+  class="flex flex-col gap-y-3 hover:(no-underline bg-gray-100 dark:bg-neutral-800) p-4 mb-6 transition-colors rounded-xl"
+>
+  <h3
+    class="text-(blue-700 xl) dark:text-blue-400 md:text-2xl font-extrabold mb-0"
+  >
+    {author}
+  </h3>
+  <div class="flex items-center gap-x-2 mt--5">
+    <img
+      src={img}
+      width="40"
+      height="40"
+      class="border-none text-transparent rounded-full"
+    />
+    <div
+      class="flex items-start flex-col mb-0 mt-0 ml-2 content-center text-sm"
+    >
+      <p class="font-bold text-sm">{author}</p>
+      <p class="text-neutral-800 dark:text-neutral-300 text-sm">
+        {posts === 1 ? `${posts} post` : `${posts} posts`}
+      </p>
+    </div>
+  </div>
+  <p class="mt--5 font-medium text-blue-700 dark:text-blue-400">View Profile →</p>
+</a>

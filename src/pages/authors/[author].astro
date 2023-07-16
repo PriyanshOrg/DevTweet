@@ -1,0 +1,57 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import { AUTHORS } from "../../util/authors";
+import Post from "../../components/Post.astro";
+
+export interface Props {
+  author: (typeof AUTHORS)[number];
+  posts: CollectionEntry<"posts">[];
+  img: string;
+}
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+
+  const authorIcon = async (author: (typeof AUTHORS)[number]) =>
+    (await Astro.glob("../../../public/authors/**/*.{jpeg,jpg,png}"))
+      .map((v) => v.default.replace("/public", ""))
+      .filter((v) => v.toLowerCase().includes(author.toLowerCase()))
+      .at(0) ?? "/authors/default.png";
+
+  return Promise.all(
+    AUTHORS.map(async (author) => ({
+      params: {
+        author: author.toLowerCase(),
+      },
+      props: {
+        author,
+        posts: posts.filter((p) => p.data.author === author),
+        img: await authorIcon(author),
+      },
+    })),
+  );
+}
+
+const { author, posts, img } = Astro.props;
+---
+
+<Layout title={author}>
+  <h1>{author}</h1>
+  <img class="mt-4 rounded-full w-24 border-none" src={img} />
+  <h2 class="mb-2">{posts.length ? "Posts" : "No Posts"}</h2>
+  <ul>
+    {
+      posts.map((post) => (
+        <li>
+          <a
+            href={`/posts/${post.slug}`}
+            class="text-blue-700 dark:text-blue-400 !no-underline"
+          >
+            {post.data.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

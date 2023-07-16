@@ -1,0 +1,55 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+export interface Props {
+  post: CollectionEntry<"posts">["data"] & {
+    slug: CollectionEntry<"posts">["slug"];
+  };
+}
+
+const {
+  post: { title, excerpt, author, createdAt, slug },
+} = Astro.props;
+
+const pubDate = new Date(createdAt).toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+});
+
+const authorIcon =
+  (await Astro.glob("../../public/authors/**/*.{jpeg,jpg,png}"))
+    .map((v) => v.default.replace("/public", ""))
+    .filter((v) => v.toLowerCase().includes(author.toLowerCase()))
+    .at(0) ?? "/authors/default.png";
+---
+
+<a
+  href={`/posts/${slug}`}
+  rel="prefetch"
+  class="flex flex-col gap-y-3 hover:(no-underline bg-gray-100 dark:bg-neutral-800) p-4 mb-6 transition-colors rounded-xl"
+>
+  <h3
+    class="text-(blue-700 xl) dark:text-blue-400 md:text-2xl font-extrabold mb-0"
+  >
+    {title}
+  </h3>
+  <div class="flex items-center gap-x-2 mt--5">
+    <img
+      src={authorIcon}
+      width="40"
+      height="40"
+      class="border-none text-transparent rounded-full"
+    />
+    <div
+      class="flex items-start flex-col mb-0 mt-0 ml-2 content-center text-sm"
+    >
+      <p class="font-bold text-sm">{author}</p>
+      <time class="text-neutral-800 dark:text-neutral-300" datetime={pubDate}>
+        {pubDate}
+      </time>
+    </div>
+  </div>
+  <p class="mt--5">{excerpt}</p>
+  <p class="font-medium text-blue-700 dark:text-blue-400">Read More →</p>
+</a>

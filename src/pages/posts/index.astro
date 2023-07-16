@@ -1,0 +1,19 @@
+---
+import Post from "../../components/Post.astro";
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("posts"))
+  .map((p) => ({
+    slug: p.slug,
+    ...p.data,
+  }))
+  .sort(
+    (a, b) => new Date(b.createdAt).valueOf() - new Date(a.createdAt).valueOf(),
+  );
+---
+
+<Layout title="Posts">
+  <h1>Posts</h1>
+  {posts.map((post) => <Post post={post} />)}
+</Layout>

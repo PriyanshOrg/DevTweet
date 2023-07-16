@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content";
+import { AUTHORS } from "../../util/authors";
+import Author from "../../components/Author.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const posts = await getCollection("posts");
+
+const authorIcon = async (author: (typeof AUTHORS)[number]) =>
+  (await Astro.glob("../../../public/authors/**/*.{jpeg,jpg,png}"))
+    .map((v) => v.default.replace("/public", ""))
+    .filter((v) => v.toLowerCase().includes(author.toLowerCase()))
+    .at(0) ?? "/authors/default.png";
+
+const authors = await Promise.all(
+  AUTHORS.map(async (author) => ({
+    author,
+    posts: posts.filter((p) => p.data.author === author).length,
+    img: await authorIcon(author),
+  })),
+);
+---
+
+<Layout title="Authors">
+  <h1>Authors</h1>
+  {authors.map((author) => <Author author={author} />)}
+</Layout>
