@@ -6,6 +6,9 @@
 
 DevTweet is an exciting open-source project designed exclusively for developers. It serves as a microblogging platform, allowing developers to post their thoughts and updates through contributions. It's a space where developers can freely share their ideas and connect with the community.
 
+## ❔ What to Post
+You can post anything related to the developer community, such as code snippets, best practices, project showcases, tech news, opinions, learning resources, and more, including introducing yourself or showcasing your GitHub profile.
+
 ## 🤔 How to Contribute
 > Thank you for your interest in contributing to our open-source project!
 
