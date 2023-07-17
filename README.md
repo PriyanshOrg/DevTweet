@@ -61,6 +61,11 @@ You can add an image for yourself by uploading an image to the `/public/authors`
 Contributions make the open source community such an amazing place to learn, inspire, and create. <br>
 **Any contributions you make are truly appreciated!**
 
+## 🆘 Need Help
+Join our discord server for any kind of help. <br>
+
+<a href="https://discord.com/invite/AeAjegXn6D"><img src="https://invidget.switchblade.xyz/AeAjegXn6D" alt="Discord Server"></a>
+
 ## 🙏 Support
 Thank you for contributing to our open-source project! We appreciate your support 🚀 <br>
 Don't forget to leave a star ⭐
