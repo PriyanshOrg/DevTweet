@@ -61,6 +61,11 @@ You can add an image for yourself by uploading an image to the `/public/authors`
 Contributions make the open source community such an amazing place to learn, inspire, and create. <br>
 **Any contributions you make are truly appreciated!**
 
+## 🤝 Thank You, Contributors!  
+<a href="https://github.com/oyepriyansh/DevTweet/contributors">
+  <img src="https://contrib.rocks/image?repo=oyepriyansh/DevTweet" />
+</a>
+
 ## 🆘 Need Help?
 Join our discord server for any kind of help. <br>
 
