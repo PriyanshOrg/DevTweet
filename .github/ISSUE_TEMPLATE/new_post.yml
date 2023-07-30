@@ -1,0 +1,20 @@
+name: "🆕 New Post"
+description: "Add a new project on DevTweet"
+title: "feat: new post by <your name>"
+labels:
+  - "New Post"
+  - "good first issue"
+body:
+  - type: textarea
+    id: post-add
+    attributes:
+      label: "Add a new project on DevTweet"
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: "Ready to Work?"
+      options:
+        - label: "I want to work on this issue"
+          required: true
