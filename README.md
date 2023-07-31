@@ -63,7 +63,7 @@ Contributions make the open source community such an amazing place to learn, ins
 
 ## 🤝 Thank You, Contributors!  
 <a href="https://github.com/oyepriyansh/DevTweet/contributors">
-  <img src="https://contrib.rocks/image?repo=oyepriyansh/DevTweet" />
+  <img src="https://contributors-img.web.app/image?repo=oyepriyansh/devtweet" />
 </a>
 
 ## 🆘 Need Help?
