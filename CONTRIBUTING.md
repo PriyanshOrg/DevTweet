@@ -29,10 +29,10 @@ Go to  `src/util/authors.ts` file. just extend the array by adding your github u
 
 ```ts
 // Before:
-export const AUTHORS = ["oyepriyansh"] as const;
+export const AUTHORS = ["oyepriyansh", "WilliamDavidHarrison"] as const;
 
 // After:
-export const AUTHORS = ["oyepriyansh", "YOUR_GITHUB_USERNAME"] as const;
+export const AUTHORS = ["oyepriyansh", "WilliamDavidHarrison", "YOUR_GITHUB_USERNAME"] as const;
 ```
 
 ### 4. Author Image
