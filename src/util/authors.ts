@@ -1,1 +1,8 @@
-export const AUTHORS = ['oyepriyansh', 'william','Abrarlala','prashantjagtap2909', 'iAmDiksha', 'ShubhamNagda'] as const;
+export const AUTHORS: string[] = [
+    'oyepriyansh',
+    'william',
+    'abrarlala',
+    'prashantjagtap2909',
+    'iamdiksha',
+    'shubhamnagda'
+]

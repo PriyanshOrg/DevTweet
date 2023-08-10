@@ -3,7 +3,7 @@ layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the pos
 title: How javascript work?
 excerpt: In this post we will learn about how javascript work.
 createdAt: 20 July 2023
-author: Abrarlala
+author: abrarlala
 ---
 
 # This is how Javascript work 

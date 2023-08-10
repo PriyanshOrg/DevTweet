@@ -3,7 +3,7 @@ layout: ../../layouts/PostLayout.astro
 title: What is HTML?
 excerpt: In this post, we will learn about HTML.
 createdAt: 2023-07-31
-author: iAmDiksha
+author: iamdiksha
 ---
 
 HTML stands for HyperText Markup Language, and it is the standard language used to create and design websites and web pages. It provides the basic structure and content of a web page. HTML uses a system of tags to define the various elements on a web page, such as headings, paragraphs, images, links, etc.
