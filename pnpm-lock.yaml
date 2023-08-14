@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@astrojs/mdx':
-    specifier: ^0.17.2
-    version: 0.17.2(astro@2.0.15)(rollup@3.27.0)
+    specifier: ^0.19.7
+    version: 0.19.7(astro@2.0.15)
   '@astrojs/react':
     specifier: ^2.2.1
     version: 2.2.1(@types/react-dom@18.2.7)(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
@@ -45,7 +45,7 @@ devDependencies:
     version: 5.1.6
   unocss:
     specifier: ^0.50.1
-    version: 0.50.1(rollup@3.27.0)(vite@4.4.8)
+    version: 0.50.1(vite@4.4.8)
   unocss-preset-scrollbar:
     specifier: ^0.2.1
     version: 0.2.1(unocss@0.50.1)
@@ -123,35 +123,65 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/mdx@0.17.2(astro@2.0.15)(rollup@3.27.0):
-    resolution: {integrity: sha512-mol57cw1jJMcQgKMRGn7p6cewajq6JTNtqj5aAZgROWam/phVDSOCbXj/WU3O9+3qFnyKtpczoufQKwJTQltAw==}
+  /@astrojs/markdown-remark@2.2.1(astro@2.0.15):
+    resolution: {integrity: sha512-VF0HRv4GpC1XEMLnsKf6jth7JSmlt9qpqP0josQgA2eSpCIAC/Et+y94mgdBIZVBYH/yFnMoIxgKVe93xfO2GA==}
+    peerDependencies:
+      astro: ^2.5.0
+    dependencies:
+      '@astrojs/prism': 2.1.2
+      astro: 2.0.15
+      github-slugger: 1.5.0
+      import-meta-resolve: 2.2.1
+      rehype-raw: 6.1.1
+      rehype-stringify: 9.0.3
+      remark-gfm: 3.0.1
+      remark-parse: 10.0.1
+      remark-rehype: 10.1.0
+      remark-smartypants: 2.0.0
+      shiki: 0.14.3
+      unified: 10.1.2
+      unist-util-visit: 4.1.2
+      vfile: 5.3.7
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@astrojs/mdx@0.19.7(astro@2.0.15):
+    resolution: {integrity: sha512-mfEbBD7oi8yBHhcJucEjnrquREkJ3os+jioURP8BR2B8tOV2rV2j8trvmLUgfS+P/+HevGObxCTjcRYxn6T7eg==}
     engines: {node: '>=16.12.0'}
     dependencies:
-      '@astrojs/markdown-remark': 2.0.1(astro@2.0.15)
-      '@astrojs/prism': 2.0.0
+      '@astrojs/markdown-remark': 2.2.1(astro@2.0.15)
+      '@astrojs/prism': 2.1.2
       '@mdx-js/mdx': 2.3.0
-      '@mdx-js/rollup': 2.3.0(rollup@3.27.0)
       acorn: 8.8.2
       es-module-lexer: 1.2.0
       estree-util-visit: 1.2.1
       github-slugger: 1.5.0
       gray-matter: 4.0.3
+      hast-util-to-html: 8.0.4
       kleur: 4.1.5
       rehype-raw: 6.1.1
       remark-frontmatter: 4.0.1
       remark-gfm: 3.0.1
       remark-smartypants: 2.0.0
-      shiki: 0.11.1
+      shiki: 0.14.3
+      source-map: 0.7.4
       unist-util-visit: 4.1.2
       vfile: 5.3.7
     transitivePeerDependencies:
       - astro
-      - rollup
       - supports-color
     dev: false
 
   /@astrojs/prism@2.0.0:
     resolution: {integrity: sha512-YgeoeEPqsxaEpg0rwe/bUq3653LqSQnMjrLlpYwrbQQMQQqz6Y5yXN+RX3SfLJ6ppNb4+Fu2+Z49EXjk48Ihjw==}
+    engines: {node: '>=16.12.0'}
+    dependencies:
+      prismjs: 1.29.0
+    dev: false
+
+  /@astrojs/prism@2.1.2:
+    resolution: {integrity: sha512-3antim1gb34689GHRQFJ88JEo93HuZKQBnmxDT5W/nxiNz1p/iRxnCTEhIbJhqMOTRbbo5h2ldm5qSxx+TMFQA==}
     engines: {node: '>=16.12.0'}
     dependencies:
       prismjs: 1.29.0
@@ -707,20 +737,6 @@ packages:
       - supports-color
     dev: false
 
-  /@mdx-js/rollup@2.3.0(rollup@3.27.0):
-    resolution: {integrity: sha512-wLvRfJS/M4UmdqTd+WoaySEE7q4BIejYf1xAHXYvtT1du/1Tl/z2450Gg2+Hu7fh05KwRRiehiTP9Yc/Dtn0fA==}
-    peerDependencies:
-      rollup: '>=2'
-    dependencies:
-      '@mdx-js/mdx': 2.3.0
-      '@rollup/pluginutils': 5.0.2(rollup@3.27.0)
-      rollup: 3.27.0
-      source-map: 0.7.4
-      vfile: 5.3.7
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /@nodelib/fs.scandir@2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -755,7 +771,7 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@rollup/pluginutils@5.0.2(rollup@3.27.0):
+  /@rollup/pluginutils@5.0.2:
     resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -767,7 +783,7 @@ packages:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
-      rollup: 3.27.0
+    dev: true
 
   /@types/acorn@4.0.6:
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
@@ -893,24 +909,24 @@ packages:
     resolution: {integrity: sha512-iO9ZQHkZxHn4mSakYV0vFHAVDyEOIJQrV2uZ06HxEPcx+mt8swXoZHIbaaJ2crJYFfErySgktuTZ3BeLz+XmFA==}
     dev: false
 
-  /@unocss/astro@0.50.1(rollup@3.27.0)(vite@4.4.8):
+  /@unocss/astro@0.50.1(vite@4.4.8):
     resolution: {integrity: sha512-TlGIK21OTbVUgrwZXfU4x0VwpNB7i/MKGcpv3HKadxdqhXReimt9gD+iRWSRAvRBgDIcH6Uqvr3Qq1aNCVEdTg==}
     dependencies:
       '@unocss/core': 0.50.1
       '@unocss/reset': 0.50.1
-      '@unocss/vite': 0.50.1(rollup@3.27.0)(vite@4.4.8)
+      '@unocss/vite': 0.50.1(vite@4.4.8)
     transitivePeerDependencies:
       - rollup
       - vite
     dev: true
 
-  /@unocss/cli@0.50.1(rollup@3.27.0):
+  /@unocss/cli@0.50.1:
     resolution: {integrity: sha512-Qu1s8sJh4XFRN62qeHAQ+NkxylPi7Gf4Gz0NmTvn4C9BjpiCwO4QKJoyy0fjY4TcdPOIkibfSg/MjTD/4ceyyA==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
       '@ampproject/remapping': 2.2.0
-      '@rollup/pluginutils': 5.0.2(rollup@3.27.0)
+      '@rollup/pluginutils': 5.0.2
       '@unocss/config': 0.50.1
       '@unocss/core': 0.50.1
       '@unocss/preset-uno': 0.50.1
@@ -1048,13 +1064,13 @@ packages:
       '@unocss/core': 0.50.1
     dev: true
 
-  /@unocss/vite@0.50.1(rollup@3.27.0)(vite@4.4.8):
+  /@unocss/vite@0.50.1(vite@4.4.8):
     resolution: {integrity: sha512-CDy9ZcwSCpz/ED9zglunmrCVDbczbtkC/ZzgcRehDUX9xeVRA397uakb7fe4Rm+KGOGmr7HsUTQR7s0C9EOYww==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0
     dependencies:
       '@ampproject/remapping': 2.2.0
-      '@rollup/pluginutils': 5.0.2(rollup@3.27.0)
+      '@rollup/pluginutils': 5.0.2
       '@unocss/config': 0.50.1
       '@unocss/core': 0.50.1
       '@unocss/inspector': 0.50.1
@@ -1110,6 +1126,10 @@ packages:
   /ansi-regex@6.0.1:
     resolution: {integrity: sha512-n5M855fKb2SsfMIiFFoVrABHJC8QtHwVx+mHWP3QcEqBHYienj5dHSgjbxtC0WEZXYt4wcD6zrQElDPhFuZgfA==}
     engines: {node: '>=12'}
+    dev: false
+
+  /ansi-sequence-parser@1.1.1:
+    resolution: {integrity: sha512-vJXt3yiaUL4UU546s3rPXlsry/RnM730G1+HkpKE012AN0sx1eOrxSu95oKDIonskeLTijMgqWZ3uDEe3NFvyg==}
     dev: false
 
   /ansi-styles@3.2.1:
@@ -1632,6 +1652,7 @@ packages:
 
   /estree-walker@2.0.2:
     resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
+    dev: true
 
   /estree-walker@3.0.3:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
@@ -3315,6 +3336,15 @@ packages:
       vscode-textmate: 6.0.0
     dev: false
 
+  /shiki@0.14.3:
+    resolution: {integrity: sha512-U3S/a+b0KS+UkTyMjoNojvTgrBHjgp7L6ovhFVZsXmBGnVdQ4K4U9oK0z63w538S91ATngv1vXigHCSWOwnr+g==}
+    dependencies:
+      ansi-sequence-parser: 1.1.1
+      jsonc-parser: 3.2.0
+      vscode-oniguruma: 1.7.0
+      vscode-textmate: 8.0.0
+    dev: false
+
   /signal-exit@3.0.7:
     resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==}
 
@@ -3650,10 +3680,10 @@ packages:
       unocss: '>= 0.31.13 < 1'
     dependencies:
       '@unocss/preset-mini': 0.31.17
-      unocss: 0.50.1(rollup@3.27.0)(vite@4.4.8)
+      unocss: 0.50.1(vite@4.4.8)
     dev: true
 
-  /unocss@0.50.1(rollup@3.27.0)(vite@4.4.8):
+  /unocss@0.50.1(vite@4.4.8):
     resolution: {integrity: sha512-D21InhvOwWb2quWVTqVUDl1shDU87KEWc8OzpLztaLmRpOV0S6SFxCZmxA5sAUGaVNdTgHAbBU9o43ipete1Mw==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -3662,8 +3692,8 @@ packages:
       '@unocss/webpack':
         optional: true
     dependencies:
-      '@unocss/astro': 0.50.1(rollup@3.27.0)(vite@4.4.8)
-      '@unocss/cli': 0.50.1(rollup@3.27.0)
+      '@unocss/astro': 0.50.1(vite@4.4.8)
+      '@unocss/cli': 0.50.1
       '@unocss/core': 0.50.1
       '@unocss/preset-attributify': 0.50.1
       '@unocss/preset-icons': 0.50.1
@@ -3678,7 +3708,7 @@ packages:
       '@unocss/transformer-compile-class': 0.50.1
       '@unocss/transformer-directives': 0.50.1
       '@unocss/transformer-variant-group': 0.50.1
-      '@unocss/vite': 0.50.1(rollup@3.27.0)(vite@4.4.8)
+      '@unocss/vite': 0.50.1(vite@4.4.8)
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -3830,6 +3860,10 @@ packages:
 
   /vscode-textmate@6.0.0:
     resolution: {integrity: sha512-gu73tuZfJgu+mvCSy4UZwd2JXykjK9zAZsfmDeut5dx/1a7FeTk0XwJsSuqQn+cuMCGVbIBfl+s53X4T19DnzQ==}
+    dev: false
+
+  /vscode-textmate@8.0.0:
+    resolution: {integrity: sha512-AFbieoL7a5LMqcnOF04ji+rpXadgOXnZsxQr//r83kLPr7biP7am3g9zbaZIaBGwBRWeSvoMD4mgPdX3e4NWBg==}
     dev: false
 
   /vscode-uri@2.1.2:
