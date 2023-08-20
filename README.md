@@ -29,3 +29,7 @@ Join our discord server for any kind of help. <br>
 ## 🙏 Support
 Thank you for contributing to our open-source project! We appreciate your support 🚀 <br>
 Don't forget to leave a star ⭐
+
+## 💳 Credits
+DevTweet is using [shakenbird/igp-forum-site](https://github.com/shakenbird/igp-forum-site) code,
+Thanks to [@DuroCodes](https://github.com/DuroCodes), [@shakenbird](https://github.com/shakenbirdhttps://github.com/shakenbird), and [@ImagineGamingPlay](https://github.com/ImagineGamingPlay). for creating that repository
