@@ -42,5 +42,5 @@ You can add an image for yourself by uploading an image to the `/public/authors`
 > **Note**:  Capitalization does not matter for the image file, make it all lower-case.
 
 ### 5. Pull Request
-- You can now commit changes to tha t repository. Once you've made the changes you want, [create a pull request](https://github.com/oyepriyansh/DevTweet/pulls) on the main repository. **Make sure to make your PR title start with `feat:`**
+- You can now commit changes to tha t repository. Once you've made the changes you want, [create a pull request](https://github.com/oyepriyansh/DevTweet/pulls) on the main repository. **Make sure to make your PR title starts with `feat:`.**
 - Once you have submitted pull request, it will be reviewed and merged as soon as possible
