@@ -4,5 +4,6 @@ export const AUTHORS: string[] = [
     'abrarlala',
     'prashantjagtap2909',
     'iamdiksha',
-    'shubhamnagda'
+    'shubhamnagda',
+    'ravisolanki27'
 ]
