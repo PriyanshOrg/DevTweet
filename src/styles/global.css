@@ -1,5 +1,7 @@
 body {
   --at-apply: "font-sans m-auto p-5 max-w-80ch text-(left neutral-700) break-words leading-6 antialiased dark:bg-neutral-900";
+  margin-left: auto !important;
+  margin-right: auto !important;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
   word-wrap: break-word;
