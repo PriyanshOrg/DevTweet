@@ -7,6 +7,5 @@ export const AUTHORS: string[] = [
   "shubhamnagda",
   "ravisolanki27",
   "sushannt",
-  "vansh16aug",
-  "rohitdubey1352"
+  "vansh16aug"
 ];
