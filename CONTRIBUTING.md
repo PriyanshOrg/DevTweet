@@ -2,7 +2,8 @@
 
 ### 1. Forking the Repo
 A fork is a local copy of the repository that is on your GitHub account, and you can make changes on that repository.
-#### [Click here to Fork](https://github.com/oyepriyansh/DevTweet/fork)
+
+[**Click here to fork the repository.**](https://github.com/oyepriyansh/DevTweet/fork)
 
 ### 2. Creating a Post
 You can create a post easily by making a new file in the `src/content/posts` directory.
@@ -20,7 +21,7 @@ author: your-author-username
 createdAt: Month Day, Year
 ---
 
-**The post content goes here.**
+**Post content goes here.**
 ```
 
 ### 3. Adding an Author
