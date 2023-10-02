@@ -1,10 +1,11 @@
 export const AUTHORS: string[] = [
-  'oyepriyansh',
-  'william',
-  'abrarlala',
-  'prashantjagtap2909',
-  'iamdiksha',
-  'shubhamnagda',
-  'ravisolanki27',
-  'rohitdubey1352'
-]
+  "oyepriyansh",
+  "william",
+  "abrarlala",
+  "prashantjagtap2909",
+  "iamdiksha",
+  "shubhamnagda",
+  "ravisolanki27",
+  "Sushannt",
+  "rohitdubey1352"
+];
