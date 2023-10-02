@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
-title: How does the virtual DOM work in React? 
+title: How does the virtual DOM work in React?
 excerpt: The React Virtual DOM is a crucial concept that enhances...
-createdAt: 25 August 2023
 author: ravisolanki27
+createdAt: August 25, 2023
 ---
 
 The React Virtual DOM is a crucial concept that enhances the performance of React applications by efficiently updating the actual DOM (Document Object Model) when the state of the application changes. It acts as an abstraction layer between the application's logic and the browser's rendering engine. Here's how it works:
@@ -34,4 +34,4 @@ The React Virtual DOM is a crucial concept that enhances the performance of Reac
 
 In summary, the React Virtual DOM works by maintaining a lightweight copy of the actual DOM in memory. When there are changes in the application's state or props, React calculates the minimal updates required to sync the Virtual DOM with the actual DOM. This process reduces the performance overhead associated with direct manipulation of the DOM, leading to faster and more efficient rendering in React applications.
 
-if you find this post helpful then consider  follow me on GitHub by [clicking here](https://github.com/RaviSolanki27).
+If you found this post helpful then consider following me on GitHub by [clicking here](https://github.com/RaviSolanki27).
