@@ -10,7 +10,7 @@ createdAt: July 20, 2023
 
 JavaScript is a versatile programming language commonly used for building interactive and dynamic web applications. It is primarily designed to be run in web browsers but can also be used on the server-side (e.g., with Node.js). Here's a high-level overview of how JavaScript works:
 
-![JS](../public/images/js.jpg)
+![JS](/images/js.jpg)
 
 1. **Interpreted Language**: JavaScript is an interpreted language, meaning it is executed line-by-line rather than being compiled into machine code like languages such as C++ or Java.
 
