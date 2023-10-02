@@ -1,13 +1,16 @@
 ---
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
-title: How javascript work?
-excerpt: In this post we will learn about how javascript work.
-createdAt: 20 July 2023
+title: How does JavaScript work?
+excerpt: In this post we will learn about how JavaScript works.
 author: abrarlala
+createdAt: July 20, 2023
 ---
 
-# This is how Javascript work 
+# This is how JavaScript works
+
 JavaScript is a versatile programming language commonly used for building interactive and dynamic web applications. It is primarily designed to be run in web browsers but can also be used on the server-side (e.g., with Node.js). Here's a high-level overview of how JavaScript works:
+
+![JS](../public/images/js.jpg)
 
 1. **Interpreted Language**: JavaScript is an interpreted language, meaning it is executed line-by-line rather than being compiled into machine code like languages such as C++ or Java.
 
@@ -33,4 +36,4 @@ JavaScript is a versatile programming language commonly used for building intera
 
 Overall, JavaScript's versatility, ease of use, and extensive community support have made it a foundational language for web development, enabling developers to create interactive and feature-rich web applications.
    
-if you find this post helpful then consider  follow me on GitHub by [clicking here](https://github.com/Abrarlala).
+If you find this post helpful then consider following me on GitHub by [clicking here](https://github.com/Abrarlala).

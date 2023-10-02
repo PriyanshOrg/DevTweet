@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: Lets Connect.....!
+title: Lets Connect!
 excerpt: My first post on DevTweet!
 author: prashantjagtap2909
 createdAt: July 27, 2023
