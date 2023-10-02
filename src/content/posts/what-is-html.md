@@ -8,7 +8,7 @@ createdAt: July 31, 2023
 
 HTML stands for HyperText Markup Language, and it is the standard language used to create and design websites and web pages. It provides the basic structure and content of a web page. HTML uses a system of tags to define the various elements on a web page, such as headings, paragraphs, images, links, etc.
 
-![HTML](../public/images/html.jpg)
+![HTML](../../public/images/html.jpg)
 
 Here's a simple example of an HTML page:
 ```
