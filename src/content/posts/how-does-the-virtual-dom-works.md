@@ -8,7 +8,8 @@ createdAt: August 25, 2023
 
 The React Virtual DOM is a crucial concept that enhances the performance of React applications by efficiently updating the actual DOM (Document Object Model) when the state of the application changes. It acts as an abstraction layer between the application's logic and the browser's rendering engine. Here's how it works:
 
-![React](/images/react.jpg)
+![React](../../public/images/react.jpg)
+
 
 1. **Initial Render:**
    When you create a React component and render it to the DOM, React generates a virtual representation of the component's structure, also known as the Virtual DOM. This Virtual DOM is a lightweight copy of the actual DOM and contains elements and their properties.
