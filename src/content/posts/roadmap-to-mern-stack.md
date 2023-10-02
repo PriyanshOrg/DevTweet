@@ -2,8 +2,8 @@
 layout: ../../layouts/PostLayout.astro
 title: Roadmap to MERN Stack.
 excerpt: lets dive into MERN stack.
-createdAt: 2023-10-02
 author: sushannt
+createdAt: October 2, 2023
 ---
 
 # Roadmap to MERN Stack Development 🚀
