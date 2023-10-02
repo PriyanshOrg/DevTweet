@@ -22,6 +22,9 @@ const authors = await Promise.all(
 ---
 
 <Layout title="Authors">
-  <h1>Authors</h1>
-  {authors.map((author) => <Author author={author} />)}
+  <div class="font-bold text-2xl text-center my-4">Authors</div>
+
+  <div class="grid grid-cols-2 gap-4 text-center">
+    {authors.map((author) => <Author author={author} />)}
+  </div>
 </Layout>
