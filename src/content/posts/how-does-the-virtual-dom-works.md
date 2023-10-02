@@ -35,3 +35,5 @@ The React Virtual DOM is a crucial concept that enhances the performance of Reac
    React also implements various optimization techniques, such as using keys to uniquely identify elements in collections, to enhance the efficiency of the reconciliation process and minimize unnecessary updates.
 
 In summary, the React Virtual DOM works by maintaining a lightweight copy of the actual DOM in memory. When there are changes in the application's state or props, React calculates the minimal updates required to sync the Virtual DOM with the actual DOM. This process reduces the performance overhead associated with direct manipulation of the DOM, leading to faster and more efficient rendering in React applications.
+
+If you found this post helpful then consider following me on GitHub by [clicking here](https://github.com/RaviSolanki27).
