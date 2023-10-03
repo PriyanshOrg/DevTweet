@@ -1,4 +1,4 @@
-export const AUTHORS: string[] = [
+export const AUTHORS = [
   "oyepriyansh",
   "william",
   "abrarlala",
@@ -10,5 +10,6 @@ export const AUTHORS: string[] = [
   "vansh16aug",
   "soyvor",
   "supriadi",
-  "ikshwaku03"
-];
+  "ikshwaku03",
+  "precious"
+] as const;
