@@ -3,7 +3,7 @@ layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the pos
 title: Cloud Computing 🔥
 excerpt: Cloud computing refers to the delivery of computing services (including servers, storage, databases, networking, software, analytics, and more) over the internet to offer faster innovation, flexible resources, and economies of scale...
 author: precious
-createdAt: October 10, 2023
+createdAt: October 03, 2023
 ---
 
 # Cloud Computing: A Brief Technical Overview
