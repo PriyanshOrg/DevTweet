@@ -31,5 +31,5 @@ Thank you for contributing to our open-source project! We appreciate your suppor
 Don't forget to leave a star ⭐
 
 ## 💳 Credits
-DevTweet is using [shakenbird/igp-forum-site](https://github.com/shakenbird/igp-forum-site) code,
-Thanks to [@DuroCodes](https://github.com/DuroCodes), [@shakenbird](https://github.com/shakenbirdhttps://github.com/shakenbird), and [@ImagineGamingPlay](https://github.com/ImagineGamingPlay). for creating that repository
+We would like to acknowledge and give credit to [DuroCodes](https://github.com/DuroCodes), [shakenbird](https://github.com/shakenbirdhttps://github.com/shakenbird), and [ImagineGamingPlay](https://github.com/ImagineGamingPlay) for their contributions to this project. Specifically, we have used code from their repository
+
