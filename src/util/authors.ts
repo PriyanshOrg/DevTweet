@@ -11,5 +11,6 @@ export const AUTHORS = [
   "soyvor",
   "supriadi",
   "ikshwaku03",
-  "precious"
+  "precious",
+  "bangadam",
 ] as const;
