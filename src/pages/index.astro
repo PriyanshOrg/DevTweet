@@ -9,12 +9,61 @@ const posts = (await getCollection("posts"))
     ...p.data,
   }))
   .sort(
-    (a, b) => new Date(b.createdAt).valueOf() - new Date(a.createdAt).valueOf(),
+    (a, b) => new Date(b.createdAt).valueOf() - new Date(a.createdAt).valueOf()
   );
 ---
 
 <Layout title="DevTweet">
-  <h1 class="text-4xl">Posts</h1>
-  {posts.map((post) => <Post post={post} />)}
-
+  <div
+    class="flex justify-center text-center flex-col mt-30 font-medium text-5xl border-neutral-500  rounded-xl py-10 scale-105"
+  >
+    <h3 class="py-5">Welcome to</h3>
+    <span class="text-blue-700 dark:text-blue-400"> DevTweet</span>
+    <p class="m-10">
+      An open-source developer-focused web application for sharing thoughts and
+      knowledge within the developer community
+    </p>
+    <div class="relative">
+      <button onclick="window.open('https://github.com/oyepriyansh/DevTweet/blob/master/CONTRIBUTING.md', '_blank')" class="relative underline-offset-0 inline-flex items-center justify-center border-1 hover:border-blue-500 px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:scale-105 hover:bg-blue-500">Get Started</button>
+    </div>
+  </div>
+  <div
+    class="flex justify-center text-center flex-col mt-40 mb-20 font-medium text-5xl border-solid border-neutral-800 border-2 rounded-xl py-10 ">
+    <div class="flex justify-center flex-col">
+      <h3 class="py-5">What to <span class="text-blue-700 dark:text-blue-400"> Post!</span></h3>
+      <p class="m-10">
+        You can post anything related to the developer community.
+      </p>
+    </div>
+    <div>
+      <ul
+        class="grid grid-rows-4 grid-flow-col gap-4 justify-around text-left list-disc p-10"
+      >
+        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+          Code snippets
+        </li>
+        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+          Best practices
+        </li>
+        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+          Project showcases
+        </li>
+        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+          Tech news
+        </li>
+        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+          Opinions
+        </li>
+        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+          Learning resources
+        </li>
+        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+          Introducing yourself
+        </li>
+        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+          Showcasing your GitHub profile
+        </li>
+      </ul>
+    </div>
+  </div>
 </Layout>
