@@ -8,7 +8,7 @@ import {
 
 import ThemeToggle from "./ThemeToggle";
 ---
-
+ 
 <header>
   <nav
     class="px-4 lg:px-6 py-2.5 mb-4 bg-gray-100 rounded-xl dark:(bg-neutral-800 text-neutral-200)"
@@ -17,60 +17,61 @@ import ThemeToggle from "./ThemeToggle";
       class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
     >
       <div class="justify-between items-center w-screen flex font-semibold">
-        <a
+      <a
           href="/"
-          class="hover:(no-underline text-blue-700 dark:(text-blue-400))"
+          class="hover:(no-underline  hover:text-blue-400)"
         >
           <div class="flex items-center justify-center gap-1">
-            <HomeIcon className="h-6" />
-            <p
-              class="hidden md:(block hover:(text-blue-700 dark:(text-blue-400)))"
+            <HomeIcon className="h-6 hover:text-blue-400" />
+            <div
+              class=" hidden md:(block hover:(text-blue-700 dark:(text-blue-400))) hover:text-blue-400"
             >
               Home
-            </p>
+            </div>
           </div>
         </a>
+   
         <a
           href="/posts"
-          class="hover:(no-underline text-blue-700 dark:(text-blue-400))"
+          class="hover:(no-underline  hover:text-blue-400)"
         >
           <div
-            class="flex items-center justify-center gap-1 dark:(hover:text-blue-400)"
+            class="flex items-center justify-center gap-1"
           >
-            <DocumentTextIcon className="h-6" />
-            <p
-              class="hidden md:(block hover:(text-blue-700 dark:(text-blue-400)))"
+            <DocumentTextIcon className="h-6 hover:text-blue-400" />
+            <div
+              class="hidden md:(block hover:(text-blue-700 dark:(text-blue-400))) hover:text-blue-400"
             >
               Posts
-            </p>
+            </div>
           </div>
         </a>
         <a
           href="/authors"
-          class="hover:(no-underline text-blue-700 dark:(text-blue-400))"
+          class="hover:(no-underline  hover:text-blue-400)"
         >
           <div class="flex items-center justify-center gap-1">
-            <UserGroupIcon className="h-6" />
-            <p
-              class="hidden md:(block hover:(text-blue-700 dark:(text-blue-400)))"
+            <UserGroupIcon className="h-6 hover:text-blue-400" />
+            <div
+              class="hidden md:(block hover:(text-blue-700 dark:(text-blue-400))) hover:text-blue-400"
             >
               Authors
-            </p>
+            </div>
           </div>
         </a>
         <a
           href="https://github.com/oyepriyansh/DevTweet"
-          class="hover:(no-underline text-blue-700 dark:(text-blue-400))"
+          class="hover:(no-underline  hover:text-blue-400)"
           target="_blank"
           rel="noopener noreferrer"
         >
           <div class="flex items-center justify-center whitespace-nowrap gap-1">
-            <DocumentPlusIcon className="h-6" />
-            <p
-              class="hidden md:(block hover:(text-blue-700 dark:(text-blue-400)))"
+            <DocumentPlusIcon className="h-6 hover:text-blue-400" />
+            <div
+              class="hidden md:(block hover:(text-blue-700 dark:(text-blue-400))) hover:text-blue-400"
             >
               GitHub
-            </p>
+            </div>
           </div>
         </a>
         <ThemeToggle client:load />
