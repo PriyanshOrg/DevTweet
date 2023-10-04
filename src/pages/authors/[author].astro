@@ -37,9 +37,9 @@ const { author, posts, img } = Astro.props;
 ---
 
 <Layout title={author}>
-  <h1>{author}</h1>
+  <h1 class="text-4xl">{author}</h1>
   <img class="mt-4 rounded-full w-24 border-none" src={img} />
-  <h2 class="mb-2">{posts.length ? "Posts" : "No Posts"}</h2>
+  <h2 class="mb-2 text-2xl">{posts.length ? "Posts" : "No Posts"}</h2>
   <ul>
     {
       posts.map((post) => (
