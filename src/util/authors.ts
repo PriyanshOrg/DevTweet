@@ -11,8 +11,12 @@ export const AUTHORS = [
   "soyvor",
   "supriadi",
   "ikshwaku03",
+  "precious",
+  "bangadam",
   "yoursshahnawaz",
   "william-monroy",
   "precious",
-  "Divya4879"
+  "Divya4879",
+  "richardhartleydev",
+  "azeen3003"
 ];

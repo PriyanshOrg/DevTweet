@@ -44,11 +44,12 @@ createdAt: July 17, 2023
    Replace `"YOUR_GITHUB_USERNAME"` with your actual GitHub username. This step ensures that your name appears as an author for the post you create.
 
    Additionally, to add an author image, follow these steps:
+
    - Upload your image to the `/public/authors` directory in the repository.
    - The image file name should be exactly the same as your GitHub username, but all in lowercase. For example, if your GitHub username is `YourGitHubUsername`, the image file should be named `yourgithubusername.png` or `yourgithubusername.jpg`.
 
    > **Note**: Capitalization does not matter for the image file, make it all lower-case.
 
-That's it! You have successfully added a post to DevTweet. Commit your changes and create a pull request to merge your post into the original repository. Once the pull request is accepted and merged, your post will be live on DevTweet. 
+That's it! You have successfully added a post to DevTweet. Commit your changes and create a pull request to merge your post into the original repository. Once the pull request is accepted and merged, your post will be live on DevTweet.
 
 **Happy coding!**
