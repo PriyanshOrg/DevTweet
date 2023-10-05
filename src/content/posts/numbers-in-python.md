@@ -8,19 +8,19 @@ createdAt: October 4, 2023
 
 Python is a versatile programming language known for its simplicity and readability. When working with numbers in Python, you have access to various numeric data types to suit your needs. Let's explore some of the fundamental numeric types in Python:
 
-Integers (int): Integers are whole numbers, whether positive or negative, without decimal points. They are used for tasks like counting and indexing.
+<br> Integers (int): Integers are whole numbers, whether positive or negative, without decimal points. They are used for tasks like counting and indexing.</br>
 
-Floating-Point Numbers (float): Floating-point numbers represent real numbers with decimal points or in exponential form. They are ideal for scientific calculations and representing values with high precision.
+<br>Floating-Point Numbers (float): Floating-point numbers represent real numbers with decimal points or in exponential form. They are ideal for scientific calculations and representing values with high precision.</br>
 
-Complex Numbers (complex): Complex numbers consist of a real and an imaginary part. These are especially useful in engineering and mathematical applications.
+<br>Complex Numbers (complex): Complex numbers consist of a real and an imaginary part. These are especially useful in engineering and mathematical applications.</br>
 
-Decimal: Python's decimal module provides precise decimal arithmetic, making it suitable for financial and decimal-based computations where precision is critical.
+<br>Decimal: Python's decimal module provides precise decimal arithmetic, making it suitable for financial and decimal-based computations where precision is critical.</br>
 
-Fraction: Fractions, available through the fractions module, are used for exact rational arithmetic, such as representing fractions in their simplest form.
+<br>Fraction: Fractions, available through the fractions module, are used for exact rational arithmetic, such as representing fractions in their simplest form.</br>
 
-Boolean (bool): Booleans are true/false values used extensively in logical operations and conditional statements.
+<br>Boolean (bool): Booleans are true/false values used extensively in logical operations and conditional statements.</br>
 
-Binary, Octal, and Hexadecimal: Python allows you to work with numbers in various bases, including binary (base 2), octal (base 8), and hexadecimal (base 16), using appropriate prefixes like 0b, 0o, and 0x.
+<br>Binary, Octal, and Hexadecimal: Python allows you to work with numbers in various bases, including binary (base 2), octal (base 8), and hexadecimal (base 16), using appropriate prefixes like 0b, 0o, and 0x.</br>
 
 In Python 2, there was a long data type for arbitrary-precision integers. However, in Python 3, this distinction was removed, and the int type can handle arbitrary precision integers.
 
