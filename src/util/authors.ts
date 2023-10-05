@@ -11,6 +11,8 @@ export const AUTHORS = [
   "soyvor",
   "supriadi",
   "ikshwaku03",
+  "precious",
+  "bangadam",
   "yoursshahnawaz",
   "william-monroy",
   "precious",
