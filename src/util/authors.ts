@@ -13,4 +13,7 @@ export const AUTHORS = [
   "ikshwaku03",
   "precious",
   "bangadam",
-] as const;
+  "yoursshahnawaz",
+  "william-monroy",
+  "precious",
+];
