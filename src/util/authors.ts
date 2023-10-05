@@ -9,10 +9,17 @@ export const AUTHORS = [
   "sushannt",
   "vansh16aug",
   "soyvor",
+  "jmngandu",
   "supriadi",
   "ikshwaku03",
+  "precious",
+  "bangadam",
   "yoursshahnawaz",
   "william-monroy",
   "precious",
+  "Divya4879",
+  "richardhartleydev",
+  "azeen3003",
+  "YashkShrivas4491",
   "rudy3333"
 ];
