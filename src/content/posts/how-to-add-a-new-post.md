@@ -1,235 +1,55 @@
 ---
 layout: ../../layouts/PostLayout.astro
-title: How to Create REST API in Golang?
-excerpt: In this post, we will learn how to create REST API in Golang.
-author: bangadam
-createdAt: October 04, 2023
+title: How to add a new post on DevTweet?
+excerpt: In this post, you will learn how to post on DevTweet and contribute to the developer community.
+author: oyepriyansh
+createdAt: July 17, 2023
 ---
 
-## How To Create REST API in Golang?
+## To add a post on DevTweet, follow these steps:
 
-![](https://cdn-images-1.medium.com/max/2800/0*GyIin64K_t0cjgo5.png)
+1. Fork the Repo:
+   Click on [this link](https://github.com/oyepriyansh/DevTweet/fork) to fork the repository to your GitHub account. This creates a personal copy of the project under your account, where you can make changes.
 
-The Golang programming language is prevalent, and many local and foreign companies are looking for programmers with Golang language skills. Therefore in this article, I will explain one of the things that must be mastered as a beginner programmer, namely creating a REST API. In this article, we will learn some things as the points below:
+2. Create a Post:
+   After forking, go to your forked repository and navigate to the `src/content/posts` directory. Create a new file with a meaningful name like `hello.md` (replace "hello" with your post's title).
 
-- How to implement a simple REST API using the Golang language
+   Inside the newly created file, add the following content with relevant information filled in:
 
-- Using Go ServeMux library as route request to handlers
+   ```md
+   ---
+   layout: ../../layouts/PostLayout.astro
+   title: Your Post Title
+   excerpt: A short description about the post
+   createdAt: YYYY-MM-DD
+   author: Your GitHub Username
+   ---
 
-- Using minimal libraries to build JSON REST API
+   **This is the content of the post.**
+   ```
 
-okay, let’s start with the execution :)
+   Replace `Your Post Title`, `A short description about the post`, `YYYY-MM-DD`, and `Your GitHub Username` with appropriate information. The `createdAt` should be representing the date when the post is created.
 
-## Using Go ServeMux
+3. Adding Yourself as an Author:
+   Open the `src/util/authors.ts` file in the repository. You'll find an array called `AUTHORS`. Simply extend the array by adding your GitHub username as a string:
 
-The ServeMux library is the main component in building the API in this article, which is useful for managing requests into handlers while it also functions as a pattern-matching against URL paths on HTTP, making it easier for us.
-The following is an example of the code to use:
+   ```ts
+   // Before:
+   export const AUTHORS = ["oyepriyansh"] as const;
 
-    type userHandler struct {}
+   // After:
+   export const AUTHORS = ["oyepriyansh", "YOUR_GITHUB_USERNAME"] as const;
+   ```
 
-    func (h *userHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-        // all users request are going to be routed here
-    }
+   Replace `"YOUR_GITHUB_USERNAME"` with your actual GitHub username. This step ensures that your name appears as an author for the post you create.
 
-    func main() {
-      mux := http.NewServeMux()
-      mux.Handle("/users/", &userHandler{})
-      http.ListenAndServe(":8080", mux)
-    }
+   Additionally, to add an author image, follow these steps:
 
-Then add some statements to the ServeHTTP method so that it can handle requests
+   - Upload your image to the `/public/authors` directory in the repository.
+   - The image file name should be exactly the same as your GitHub username, but all in lowercase. For example, if your GitHub username is `YourGitHubUsername`, the image file should be named `yourgithubusername.png` or `yourgithubusername.jpg`.
 
-    var (
-        listUserRe = regexp.MustCompile(`^\/users[\/]*$`)
-        getUserRe  = regexp.MustCompile(`^\/users\/(\d+)$`)
-        createUserRe = regexp.MustCompile(`^\/users[\/]*$`)
-    )
+   > **Note**: Capitalization does not matter for the image file, make it all lower-case.
 
-    type userHandler struct {}
+That's it! You have successfully added a post to DevTweet. Commit your changes and create a pull request to merge your post into the original repository. Once the pull request is accepted and merged, your post will be live on DevTweet.
 
-    func (h *userHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-        w.Header().Set("content-type", "application/json")
-        switch {
-           case r.Method == http.MethodGet && listUserRe.MatchString(r.URL.Path):
-            h.List(w, r)
-            return
-           case r.Method == http.MethodGet && getUserRe.MatchString(r.URL.Path):
-            h.Get(w, r)
-            return
-           case r.Method == http.MethodPost && createUserRe.MatchString(r.URL.Path):
-            h.Create(w, r)
-            return
-        default:
-            notFound(w, r)
-            return
-        }
-    }
-
-    func main() {
-        mux := http.NewServeMux()
-        mux.Handle("/users/", &userHanlder{})
-        http.ListenAndServe(":8080", mux)
-    }
-
-Now we just need to add some storage and create the appropriate handler for each request. For this example, we’ll use in-memory storage, but you can use whatever storage type best meets your needs.
-
-## Final Code
-
-    package main
-
-    import (
-        "encoding/json"
-        "net/http"
-        "regexp"
-        "sync"
-    )
-
-    var (
-        listUserRe   = regexp.MustCompile(`^\/users[\/]*$`)
-        getUserRe    = regexp.MustCompile(`^\/users\/(\d+)$`)
-        createUserRe = regexp.MustCompile(`^\/users[\/]*$`)
-    )
-
-    type user struct {
-        ID   string `json:"id"`
-        Name string `json:"name"`
-    }
-
-    type datastore struct {
-        m map[string]user
-        *sync.RWMutex
-    }
-
-    type userHandler struct {
-        store *datastore
-    }
-
-    func (h *userHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-        w.Header().Set("content-type", "application/json")
-        switch {
-        case r.Method == http.MethodGet && listUserRe.MatchString(r.URL.Path):
-            h.List(w, r)
-            return
-        case r.Method == http.MethodGet && getUserRe.MatchString(r.URL.Path):
-            h.Get(w, r)
-            return
-        case r.Method == http.MethodPost && createUserRe.MatchString(r.URL.Path):
-            h.Create(w, r)
-            return
-        default:
-            notFound(w, r)
-            return
-        }
-    }
-
-    func (h *userHandler) List(w http.ResponseWriter, r *http.Request) {
-        h.store.RLock()
-        users := make([]user, 0, len(h.store.m))
-        for _, v := range h.store.m {
-            users = append(users, v)
-        }
-        h.store.RUnlock()
-        jsonBytes, err := json.Marshal(users)
-        if err != nil {
-            internalServerError(w, r)
-            return
-        }
-        w.WriteHeader(http.StatusOK)
-        w.Write(jsonBytes)
-    }
-
-    func (h *userHandler) Get(w http.ResponseWriter, r *http.Request) {
-        matches := getUserRe.FindStringSubmatch(r.URL.Path)
-        if len(matches) < 2 {
-            notFound(w, r)
-            return
-        }
-        h.store.RLock()
-        u, ok := h.store.m[matches[1]]
-        h.store.RUnlock()
-        if !ok {
-            w.WriteHeader(http.StatusNotFound)
-            w.Write([]byte("user not found"))
-            return
-        }
-        jsonBytes, err := json.Marshal(u)
-        if err != nil {
-            internalServerError(w, r)
-            return
-        }
-        w.WriteHeader(http.StatusOK)
-        w.Write(jsonBytes)
-    }
-
-    func (h *userHandler) Create(w http.ResponseWriter, r *http.Request) {
-        var u user
-        if err := json.NewDecoder(r.Body).Decode(&u); err != nil {
-            internalServerError(w, r)
-            return
-        }
-        h.store.Lock()
-        h.store.m[u.ID] = u
-        h.store.Unlock()
-        jsonBytes, err := json.Marshal(u)
-        if err != nil {
-            internalServerError(w, r)
-            return
-        }
-        w.WriteHeader(http.StatusOK)
-        w.Write(jsonBytes)
-    }
-
-    func internalServerError(w http.ResponseWriter, r *http.Request) {
-        w.WriteHeader(http.StatusInternalServerError)
-        w.Write([]byte("internal server error"))
-    }
-
-    func notFound(w http.ResponseWriter, r *http.Request) {
-        w.WriteHeader(http.StatusNotFound)
-        w.Write([]byte("not found"))
-    }
-
-    func main() {
-        mux := http.NewServeMux()
-        userH := &userHandler{
-            store: &datastore{
-                m: map[string]user{
-                    "1": user{ID: "1", Name: "bob"},
-                },
-                RWMutex: &sync.RWMutex{},
-            },
-        }
-        mux.Handle("/users", userH)
-        mux.Handle("/users/", userH)
-
-        http.ListenAndServe("localhost:8080", mux)
-    }
-
-## Run and Test our REST API Server
-
-run the command below to run the Golang project
-
-    $ go run server.go
-
-then call the REST API URL that you created earlier, as below
-
-    curl http://localhost:8080/users
-    [{"id":"1","name":"bob"}]
-
-    curl http://localhost:8080/users/1
-    {"id":"1","name":"bob"}
-
-    curl -X POST -H 'content-type: application/json' --data '{"id": "2", "name": "karen"}' http://localhost:8080/users
-    {"id":"2","name":"karen"}
-
-    curl http://localhost:8080/users
-    [{"id":"1","name":"bob"},{"id":"2","name":"karen"}]
-
-    curl http://localhost:8080/users/2
-    {"id":"2","name":"karen"}
-
-## Thanks For Reading!
-
-Available for a new project! Let’s have a talk :
-Email: [bangadam.dev@gmail.com](mailto:bangadam.dev@gmail.com)
-Linkedin: [https://www.linkedin.com/in/bangadam](https://www.linkedin.com/in/bangadam/)
+**Happy coding!**
