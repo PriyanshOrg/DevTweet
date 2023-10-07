@@ -3,10 +3,10 @@ layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the pos
 title: How to create a Spring Boot Application?
 excerpt: According to the official Spring ...
 author: Siddharth1006
-createdAt: October 7th, 2023
+createdAt: October 8th, 2023
 ---
 
-<img src="../../../public/images/springBootimage.png" width="300" height="150" />
+<img src="https://4.bp.blogspot.com/-ou-a_Aa1t7A/W6IhNc3Q0gI/AAAAAAAAD6Y/pwh44arKiuM_NBqB1H7Pz4-7QhUxAgZkACLcBGAs/s1600/spring-boot-logo.png" width="300" height="150" />
 
 **According to the official** *[Spring Boot](https://spring.io/projects/spring-boot)* **website,**
 
