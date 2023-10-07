@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
 title: How to create a Spring Boot Application?
-excerpt: 
+excerpt: According to the official Spring ...
 author: Siddharth1006
-createdAt: August 25, 2023
+createdAt: October 7th, 2023
 ---
 
 <img src="../../../public/images/springBootimage.png" width="300" height="150" />
@@ -30,7 +30,7 @@ Before we begin, make sure you have the following:
 
 1. Open your preferred Integrated Development Environment (IDE).
 2. Create a new Spring Boot project.
-   - You can use Spring Initializer (https://start.spring.io/) or your IDE's built-in Spring Boot project creation tool.
+   - You can use Spring Initializer (https://start.spring.io/) or your IDE's built-in Spring Boot project creation tool as follows:
    - Select the dependencies you need (e.g., Spring Web, Spring Boot DevTools, etc.).
 
 ## Step 2: Create a Spring Boot Application Class
