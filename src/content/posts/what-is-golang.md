@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: What is GOLANG?
 excerpt: In this post, we will learn about GOLANG.
+category: Learn
 author: supriadi
 createdAt: October 03, 2023
 ---

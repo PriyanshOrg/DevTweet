@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: Numbers in Python
 excerpt: Showcasing different types of number representation in Python
+category: Learn
 author: rudy3333
 createdAt: October 4, 2023
 ---

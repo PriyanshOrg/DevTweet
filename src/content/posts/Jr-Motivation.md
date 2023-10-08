@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
 title: Junior Dev Motivation
 excerpt: Jr Dev Motivation
+category: Perspective/Experience
 author: richardhartleydev
 createdAt: October 4, 2023
 ---

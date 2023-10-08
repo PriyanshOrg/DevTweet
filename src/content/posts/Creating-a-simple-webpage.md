@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
 title: Creating a Simple Web Page
 excerpt: Let's dive into a beginner-friendly tutorial on creating a simple web page
+category: Learn
 author: maida12
 createdAt: October 5, 2023
 ---

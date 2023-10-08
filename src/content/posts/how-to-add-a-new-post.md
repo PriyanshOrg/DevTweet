@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: How to add a new post on DevTweet?
 excerpt: In this post, you will learn how to post on DevTweet and contribute to the developer community.
+category: Learn
 author: oyepriyansh
 createdAt: July 17, 2023
 ---

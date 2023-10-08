@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: Hey
 excerpt: This is a test post on DevTweet
+category: Miscellaneous
 author: yoursshahnawaz
 createdAt: Oct 04, 2023
 ---

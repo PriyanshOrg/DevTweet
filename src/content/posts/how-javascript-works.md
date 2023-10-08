@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
 title: How does JavaScript work?
 excerpt: In this post we will learn about how JavaScript works.
+category: Learn
 author: abrarlala
 createdAt: July 20, 2023
 ---

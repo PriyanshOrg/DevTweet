@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
 title: What is JavaScript?
 excerpt: JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. It is the language of the web.
+category: Learn
 author: william-monroy
 createdAt: October 04, 2023
 ---

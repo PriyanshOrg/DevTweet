@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: What is HTML?
 excerpt: In this post, we will learn about HTML.
+category: Learn
 author: iamdiksha
 createdAt: July 31, 2023
 ---

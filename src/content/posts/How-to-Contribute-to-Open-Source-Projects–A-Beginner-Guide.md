@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
 title: How to Contribute to Open Source Projects – A Beginner's Guide
 excerpt: As we continue to advance technologically....
+category: Learn
 author: ikshwaku03
 createdAt: October 3, 2023
 ---

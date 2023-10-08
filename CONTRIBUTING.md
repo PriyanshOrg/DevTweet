@@ -17,12 +17,24 @@ You can also supply `image` and `slug` to the frontmatter.
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
 title: The title of the post
 excerpt: A short description of the post
+category: What category/section does your post fall into? 
 author: your-author-username
 createdAt: Month Day, Year
 ---
 
 **Post content goes here.**
 ```
+
+*List of categories: TechNews, HowTo..?, Learn, Perspective, Miscellaneous, Introductions, Workshops, Competitions, Resource*
+**Note:**
+    - TechNews: self explanatory. post about job market, ceos/leaders of industry, companies and so on.
+    - Learn: post about any explaining technical concept/application/software etc. Not necessarily involves any code. But having is a plus!
+    - Perspective/Experience: Personal/Informal view/opinion/take on something(could be an ongoing topic, a custom way to do something etc. Something of your own/your perspective) (OR) an experience you would like to share.
+    - Introductions: post about introducing oneself, sharing github/linkedin profiles.
+    - Workshops: post about online/offline workshops that are going to be held.
+    - Innovate: post about new ideas, projects,  
+    - Resource: post sharing resource(s) of any kind. Repositories, pdfs etc. 
+    - Miscellaneous: post that doesn't fall into any of the above categories.
 
 ### 3. Adding an Author
 

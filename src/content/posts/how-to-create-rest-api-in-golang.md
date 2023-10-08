@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: How to Create REST API in Golang?
 excerpt: In this post, we will learn how to create REST API in Golang.
+category: Learn
 author: bangadam
 createdAt: October 04, 2023
 ---

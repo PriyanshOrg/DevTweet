@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: William's First Post
 excerpt: My first post on DevTweet!
+category: Introductions
 author: william
 createdAt: July 17, 2023
 ---

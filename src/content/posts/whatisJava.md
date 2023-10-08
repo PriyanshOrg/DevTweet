@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
 title: Free Java Programming Books
 excerpt: Welcome to the Free Java Programming Books repository! This collection of free resources provides valuable learning materials for Java developers of all levels.
+category: Learn
 createdAt: 2 October 2023
 author: soyvor
 ---

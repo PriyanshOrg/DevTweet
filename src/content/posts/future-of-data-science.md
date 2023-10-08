@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
 title: Future of Data Science
 excerpt: A short tweet discussing the future of data science
+category: Perspective/Experience
 author: Azeen3003
 createdAt: October 4, 2023
 ---

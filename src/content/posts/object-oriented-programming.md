@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro 
 title: How does object oriented JavaScript work?
 excerpt: In this post we will learn about how object oriented JavaScript works.
+category: HowTo..?
 createdAt: 2 October, 2023
 author: vansh16aug
 ---

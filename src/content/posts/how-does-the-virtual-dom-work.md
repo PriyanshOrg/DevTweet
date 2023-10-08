@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
 title: How does the virtual DOM work in React?
 excerpt: The React Virtual DOM is a crucial concept that enhances...
+category: Learn
 author: ravisolanki27
 createdAt: August 25, 2023
 ---

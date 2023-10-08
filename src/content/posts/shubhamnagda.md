@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: Hello everyone I am Shubham 
 excerpt: My first post on DevTweet!
+category: Introductions
 author: shubhamnagda
 createdAt: July 31, 2023
 ---

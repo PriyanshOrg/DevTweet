@@ -2,6 +2,7 @@
 layout: ../../layouts/PostLayout.astro 
 title: The React js
 excerpt: What is Reactjs
+category: Learn
 author: jmngandu
 createdAt: october 5, 2023
 ---
