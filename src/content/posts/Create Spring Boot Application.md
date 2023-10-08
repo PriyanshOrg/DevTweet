@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
-title: How to create a Spring Boot Application?
-excerpt: According to the official Spring ...
-author: Siddharth1006
+title: How to create a Spring Boot application
+excerpt: According to the official Spring Boot website...
+author: siddharth1006
 createdAt: October 8th, 2023
 ---
 
