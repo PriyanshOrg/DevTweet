@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the post gets properly styled
-title: The title of the post
-excerpt: A short description of the post
-author: your-author-username
-createdAt: Month Day, Year
+title: What is Astro Js.
+excerpt: This post states the purpose of Astro and how to basic install it
+author: rizzabh
+createdAt: October 9th, 2023
 ---
 
 # Astro.js: The Modern Web Framework
