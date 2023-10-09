@@ -3,7 +3,7 @@ layout: ../../layouts/PostLayout.astro # Always use this layout, it's so the pos
 title: What is Astro Js.
 excerpt: This post states the purpose of Astro and how to basic install it
 author: rizzabh
-createdAt: October 9th, 2023
+createdAt: October 9, 2023
 ---
 
 # Astro.js: The Modern Web Framework
