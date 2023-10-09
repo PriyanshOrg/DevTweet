@@ -21,8 +21,8 @@ dependencies:
     specifier: ^18.2.8
     version: 18.2.8
   '@unocss/reset':
-    specifier: ^0.56.4
-    version: 0.56.4
+    specifier: ^0.56.5
+    version: 0.56.5
   astro:
     specifier: ^2.0.15
     version: 2.0.15
@@ -1122,8 +1122,8 @@ packages:
     resolution: {integrity: sha512-BcANWHHrKgHML5TLaPuSl148L2WLA938r0pLi4PrRTmZtkgP4OhBLs8U8BaDNVVGR/nli7VDxNRZFb9es3Tq9Q==}
     dev: true
 
-  /@unocss/reset@0.56.4:
-    resolution: {integrity: sha512-7o3Jpog49ORWW+Rpz7bzYY+CStfLMyBXAeDOzhM2PQjftuQl4ZQOvIdXi6zrXDEN2SJQsi279s2t50ERZN8YcA==}
+  /@unocss/reset@0.56.5:
+    resolution: {integrity: sha512-//Pv2ITAdnpWB9FIr0JiQVl1rL1XgISR8mu3OikhCfi6d/4OH+o6/WyE7evF1pOmk1JjsQlznOABIZXQlcpbHQ==}
     dev: false
 
   /@unocss/rule-utils@0.56.4:
