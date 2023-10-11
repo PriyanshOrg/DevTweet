@@ -9,20 +9,20 @@ dependencies:
     specifier: ^0.17.2
     version: 0.17.2(astro@2.0.15)(rollup@3.27.0)
   '@astrojs/react':
-    specifier: ^3.0.2
-    version: 3.0.2(@types/react-dom@18.2.8)(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0)(vite@4.4.8)
+    specifier: ^3.0.3
+    version: 3.0.3(@types/react-dom@18.2.11)(@types/react@18.2.25)(react-dom@18.2.0)(react@18.2.0)(vite@4.4.8)
   '@heroicons/react':
     specifier: ^2.0.18
     version: 2.0.18(react@18.2.0)
   '@types/react':
-    specifier: ^18.2.24
-    version: 18.2.24
+    specifier: ^18.2.25
+    version: 18.2.25
   '@types/react-dom':
-    specifier: ^18.2.8
-    version: 18.2.8
+    specifier: ^18.2.11
+    version: 18.2.11
   '@unocss/reset':
-    specifier: ^0.56.4
-    version: 0.56.4
+    specifier: ^0.56.5
+    version: 0.56.5
   astro:
     specifier: ^2.0.15
     version: 2.0.15
@@ -157,8 +157,8 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react@3.0.2(@types/react-dom@18.2.8)(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0)(vite@4.4.8):
-    resolution: {integrity: sha512-aooNIuQxTg+IWGMZPuIEwBeBi4/TCPCMsr3714zuLjAjukVd5ZrX/bCNxJqDWU4HNwUm4XFU1OhcEvYOHa5uMQ==}
+  /@astrojs/react@3.0.3(@types/react-dom@18.2.11)(@types/react@18.2.25)(react-dom@18.2.0)(react@18.2.0)(vite@4.4.8):
+    resolution: {integrity: sha512-foliIy1whJobo+ZpsvOMS4WCiR0z4/2Seyxth5xMlweVVM+gA1Lqk0GdzE6F0ISUW9CuXrCRS7ZyTNW8SM6vog==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       '@types/react': ^17.0.50 || ^18.0.21
@@ -166,8 +166,8 @@ packages:
       react: ^17.0.2 || ^18.0.0
       react-dom: ^17.0.2 || ^18.0.0
     dependencies:
-      '@types/react': 18.2.24
-      '@types/react-dom': 18.2.8
+      '@types/react': 18.2.25
+      '@types/react-dom': 18.2.11
       '@vitejs/plugin-react': 4.0.4(vite@4.4.8)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -962,14 +962,14 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: false
 
-  /@types/react-dom@18.2.8:
-    resolution: {integrity: sha512-bAIvO5lN/U8sPGvs1Xm61rlRHHaq5rp5N3kp9C+NJ/Q41P8iqjkXSu0+/qu8POsjH9pNWb0OYabFez7taP7omw==}
+  /@types/react-dom@18.2.11:
+    resolution: {integrity: sha512-zq6Dy0EiCuF9pWFW6I6k6W2LdpUixLE4P6XjXU1QHLfak3GPACQfLwEuHzY5pOYa4hzj1d0GxX/P141aFjZsyg==}
     dependencies:
-      '@types/react': 18.2.24
+      '@types/react': 18.2.25
     dev: false
 
-  /@types/react@18.2.24:
-    resolution: {integrity: sha512-Ee0Jt4sbJxMu1iDcetZEIKQr99J1Zfb6D4F3qfUWoR1JpInkY1Wdg4WwCyBjL257D0+jGqSl1twBjV8iCaC0Aw==}
+  /@types/react@18.2.25:
+    resolution: {integrity: sha512-24xqse6+VByVLIr+xWaQ9muX1B4bXJKXBbjszbld/UEDslGLY53+ZucF44HCmLbMPejTzGG9XgR+3m2/Wqu1kw==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -1122,8 +1122,8 @@ packages:
     resolution: {integrity: sha512-BcANWHHrKgHML5TLaPuSl148L2WLA938r0pLi4PrRTmZtkgP4OhBLs8U8BaDNVVGR/nli7VDxNRZFb9es3Tq9Q==}
     dev: true
 
-  /@unocss/reset@0.56.4:
-    resolution: {integrity: sha512-7o3Jpog49ORWW+Rpz7bzYY+CStfLMyBXAeDOzhM2PQjftuQl4ZQOvIdXi6zrXDEN2SJQsi279s2t50ERZN8YcA==}
+  /@unocss/reset@0.56.5:
+    resolution: {integrity: sha512-//Pv2ITAdnpWB9FIr0JiQVl1rL1XgISR8mu3OikhCfi6d/4OH+o6/WyE7evF1pOmk1JjsQlznOABIZXQlcpbHQ==}
     dev: false
 
   /@unocss/rule-utils@0.56.4:
