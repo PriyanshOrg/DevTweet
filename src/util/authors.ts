@@ -25,7 +25,11 @@ export const AUTHORS = [
   "maida12",
   "siddharth1006",
 <<<<<<< HEAD
-  "younusk"
+<<<<<<< HEAD
+  "younusk",
+=======
+  "rizzabh"
+>>>>>>> 5e9c64c7572643e635f777d56923218c2fb38500
 =======
   "rizzabh"
 >>>>>>> 5e9c64c7572643e635f777d56923218c2fb38500
