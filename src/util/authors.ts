@@ -23,6 +23,6 @@ export const AUTHORS = [
   "YashkShrivas4491",
   "rudy3333",
   "maida12",
-  "siddharth1006"
+  "siddharth1006",
   "younusk"
 ];
