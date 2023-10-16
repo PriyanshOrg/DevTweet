@@ -33,3 +33,5 @@ Don't forget to leave a star ⭐
 ## 💳 Credits
 We would like to acknowledge and give credit to [DuroCodes](https://github.com/DuroCodes), [shakenbird](https://github.com/shakenbirdhttps://github.com/shakenbird), and [ImagineGamingPlay](https://github.com/ImagineGamingPlay) for their contributions to this project. Specifically, we have used code from their repository
 
+## 💳 Author
+> <a href="https://github.com/oyepriyansh">Priyansh Prajapat (@oyepriyansh)</a>
