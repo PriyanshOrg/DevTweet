@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: What is Angular
 excerpt: What is Angular
-author: Patrick Murimi
+author: grand-rick001
 createdAt: october 15, 2023
 ---
 
