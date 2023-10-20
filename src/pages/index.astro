@@ -37,7 +37,7 @@ const posts = (await getCollection("posts"))
     </div>
     <div>
       <ul
-        class="grid grid-rows-4 grid-flow-col gap-4 justify-around text-left list-disc p-10"
+        class="grid grid-rows-4 sm:grid-flow-col grid-flow-row  gap-4 justify-around text-left list-disc p-10"
       >
         <li class="hover:scale-105 transition-all ease-in-out duration-300">
           Code snippets
@@ -69,4 +69,5 @@ const posts = (await getCollection("posts"))
 </Layout>
   <fotter class="text-center">
     <p class="font-semibold text-black">Made with 💖 by <span><a class="text-blue-400 font-bold hover:(no-underline text-blue-600)" href="https://github.com/oyepriyansh">oyePriyansh</a></span></p>
+    <p><div>Copyright © {(new Date().getFullYear())}.All rights reserved.</div></p>
   </fotter>
