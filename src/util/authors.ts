@@ -18,7 +18,7 @@ export const AUTHORS = [
   "precious",
   "Divya4879",
   "richardhartleydev",
-  "azeen3003",
+  "Azeen3003",
   "YashkShrivas4491",
   "rudy3333",
   "maida12",
