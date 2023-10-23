@@ -25,5 +25,6 @@ export const AUTHORS = [
   "siddharth1006",
   "younusk",
   "rizzabh",
-  "grand-rick001"
+  "grand-rick001",
+  "Zemerik"
 ];
