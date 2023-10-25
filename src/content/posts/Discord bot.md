@@ -93,5 +93,5 @@ client.login('YOUR BOT TOKEN HERE')
 
 ##
 
-<h4 align = "center">Thats all for this project. Hope you had fun while coding your discord bot and found this post helpful. /h4>
+<h4 align = "center">Thats all for this project. Hope you had fun while coding your discord bot and found this post helpful. </h4>
 <h5 align = "center">Thanks for visiting</h5>
