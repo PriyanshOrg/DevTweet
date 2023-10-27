@@ -17,8 +17,8 @@ const posts = (await getCollection("posts"))
   <div
     class="flex justify-center text-center flex-col mt-30 font-medium text-5xl border-neutral-500  rounded-xl py-10 scale-105"
   >
-    <h3 class="py-5">Welcome to</h3>
-    <span class="text-blue-700 dark:text-blue-400"> DevTweet</span>
+    <h3 class="py-5 font-bold">Welcome to</h3>
+    <span class="text-blue-700 dark:text-blue-400 font-bold"> DevTweet</span>
     <p class="m-10">
       An open-source developer-focused web application for sharing thoughts and
       knowledge within the developer community
@@ -30,37 +30,37 @@ const posts = (await getCollection("posts"))
   <div
     class="flex justify-center text-center flex-col mt-40 mb-20 font-medium text-5xl border-solid border-neutral-800 border-2 rounded-xl py-10 ">
     <div class="flex justify-center flex-col">
-      <h3 class="py-5">What to <span class="text-blue-700 dark:text-blue-400"> Post!</span></h3>
-      <p class="m-10">
+      <h3 class="py-4 font-bold">What to <span class="text-blue-700 dark:text-blue-400"> Post!</span></h3>
+      <p class="mt-4 mb-8">
         You can post anything related to the developer community.
       </p>
     </div>
     <div>
       <ul
-        class="grid grid-rows-4 sm:grid-flow-col grid-flow-row  gap-4 justify-around text-left list-disc p-10"
+        class="grid grid-rows-4 sm:grid-flow-col grid-flow-row  gap-4 justify-around text-left list-disc px-10"
       >
-        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+        <li class="hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
           Code snippets
         </li>
-        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+        <li class="hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
           Best practices
         </li>
-        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+        <li class="hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
           Project showcases
         </li>
-        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+        <li class="hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
           Tech news
         </li>
-        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+        <li class="hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
           Opinions
         </li>
-        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+        <li class="hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
           Learning resources
         </li>
-        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+        <li class="hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
           Introducing yourself
         </li>
-        <li class="hover:scale-105 transition-all ease-in-out duration-300">
+        <li class="hover:scale-105 transition-all ease-in-out duration-300 cursor-pointer">
           Showcasing your GitHub profile
         </li>
       </ul>
@@ -69,5 +69,6 @@ const posts = (await getCollection("posts"))
 </Layout>
   <fotter class="text-center">
     <p class="font-semibold text-black">Made with 💖 by <span><a class="text-blue-400 font-bold hover:(no-underline text-blue-600)" href="https://github.com/oyepriyansh">oyePriyansh</a></span></p>
-    <p><div>Copyright © {(new Date().getFullYear())}.All rights reserved.</div></p>
+    <!-- <p><div>Copyright © {(new Date().getFullYear())}.All rights reserved.</div></p> -->
+    <p><div>Copyright © {(new Date().getFullYear())} DevTweet | All rights reserved.</div></p
   </fotter>
