@@ -15,7 +15,7 @@
 		"@heroicons/react": "^2.0.18",
 		"@types/react": "^18.2.28",
 		"@types/react-dom": "^18.2.14",
-		"@unocss/reset": "^0.56.5",
+		"@unocss/reset": "^0.57.1",
 		"astro": "^2.0.15",
 		"mdast-util-to-string": "^4.0.0",
 		"react": "^18.0.0",
