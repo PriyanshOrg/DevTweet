@@ -34,4 +34,4 @@ Don't forget to leave a star ⭐
 We would like to acknowledge and give credit to [DuroCodes](https://github.com/DuroCodes), [shakenbird](https://github.com/shakenbirdhttps://github.com/shakenbird), and [ImagineGamingPlay](https://github.com/ImagineGamingPlay) for their contributions to this project. Specifically, we have used code from their repository
 
 ## 💳 Author
-> <a href="https://biodrop.io/oyepriyansh">Priyansh Prajapat (@oyepriyansh)</a>
+> <a href="https://x.com/oyepriyansh">Priyansh Prajapat (@oyepriyansh)</a>
