@@ -18,13 +18,13 @@
 		"@unocss/reset": "^0.58.0",
 		"astro": "^2.10.15",
 		"mdast-util-to-string": "^4.0.0",
-		"react": "^18.0.0",
-		"react-dom": "^18.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
 		"reading-time": "^1.5.0"
 	},
 	"devDependencies": {
 		"typescript": "^5.3.3",
-		"unocss": "^0.50.1",
+		"unocss": "^0.50.8",
 		"unocss-preset-scrollbar": "^0.3.0"
 	}
 }
