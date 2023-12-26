@@ -10,10 +10,14 @@ You can post anything related to the developer community, such as code snippets,
 ## 🤔 How to Contribute
 > Thank you for your interest in contributing to our open-source project!
 
-Please see the [CONTRIBUTING.md](https://github.com/oyepriyansh/DevTweet/blob/master/CONTRIBUTING.md) file for more information.
+#### Prerequisites
+- A GitHub account
+- Git installed on your local development environment
+- Node Package Manager (npm) installed on your local development environment
+- pnpm installed on your local development environment
 
-## 👨‍💻 Contributing
-Contributions make the open source community such an amazing place to learn, inspire, and create.<br>
+Please see the [CONTRIBUTING.md](https://github.com/oyepriyansh/DevTweet/blob/main/CONTRIBUTING.md) file for more information.
+
 **Any contributions you make are truly appreciated!**
 
 ## 🤝 Thank You, Contributors!
@@ -27,7 +31,6 @@ Join our discord server for any kind of help. <br>
 <a href="https://discord.com/invite/AeAjegXn6D"><img src="https://invidget.switchblade.xyz/AeAjegXn6D" alt="Discord Server"></a>
 
 ## 🙏 Support
-Thank you for contributing to our open-source project! We appreciate your support 🚀 <br>
 Don't forget to leave a star ⭐
 
 ## 💳 Credits
