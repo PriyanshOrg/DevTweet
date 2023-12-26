@@ -8,48 +8,99 @@ createdAt: July 17, 2023
 
 ## To add a post on DevTweet, follow these steps:
 
-1. Fork the Repo:
-   Click on [this link](https://github.com/oyepriyansh/DevTweet/fork) to fork the repository to your GitHub account. This creates a personal copy of the project under your account, where you can make changes.
+1. Forking the Repository
+click on that fork button to fork the repository.
+[![Fork the repository](https://oyepriyansh.pages.dev/i/f56b265fb21.png)](#-contributing)
 
-2. Create a Post:
-   After forking, go to your forked repository and navigate to the `src/content/posts` directory. Create a new file with a meaningful name like `hello.md` (replace "hello" with your post's title).
 
-   Inside the newly created file, add the following content with relevant information filled in:
+2. Clone the repository 
+```
+git clone https://github.com/<YOUR-USERNAME>/DevTweet.git
+```
 
-   ```md
-   ---
-   layout: ../../layouts/PostLayout.astro
-   title: Your Post Title
-   excerpt: A short description about the post
-   createdAt: YYYY-MM-DD
-   author: Your GitHub Username
-   ---
+3.  Navigate to the repository folder
+```
+cd DevTweet
+```
 
-   **This is the content of the post.**
-   ```
+4. Add a reference(remote) to the original repository.
+```
+git remote add upstream https://github.com/oyepriyansh/DevTweet.git
+```
+5.  Now go ahead and create a new branch and move to the branch
+```
+git checkout -b newpost
+```
 
-   Replace `Your Post Title`, `A short description about the post`, `YYYY-MM-DD`, and `Your GitHub Username` with appropriate information. The `createdAt` should be representing the date when the post is created.
+6.  Install dependencies and run in local
+```
+pnpm i
+```
+```
+pnpm dev
+```
 
-3. Adding Yourself as an Author:
-   Open the `src/util/authors.ts` file in the repository. You'll find an array called `AUTHORS`. Simply extend the array by adding your GitHub username as a string:
+> [!NOTE]
+>  If you don't have pnpm installed in your system then run this command `npm i -g pnpm`
 
-   ```ts
-   // Before:
-   export const AUTHORS = ["oyepriyansh"] as const;
+&nbsp;
+7. Make your changes
+<details open>
+<summary><h5>Creating a post</h5></summary>
+  
+Go to `src/content/posts` directory. </p>
 
-   // After:
-   export const AUTHORS = ["oyepriyansh", "YOUR_GITHUB_USERNAME"] as const;
-   ```
+Create a markdown file, for example `hello.md`.
 
-   Replace `"YOUR_GITHUB_USERNAME"` with your actual GitHub username. This step ensures that your name appears as an author for the post you create.
+Now copy the template code from below, and put into your markdown file and replace the placeholder with actual values.
 
-   Additionally, to add an author image, follow these steps:
+```md
+---
+layout: ../../layouts/PostLayout.astro
+title: The title of the post
+excerpt: A short description of the post
+author: your-author-username
+createdAt: Month Day, Year
+---
 
-   - Upload your image to the `/public/authors` directory in the repository.
-   - The image file name should be exactly the same as your GitHub username, but all in lowercase. For example, if your GitHub username is `YourGitHubUsername`, the image file should be named `yourgithubusername.png` or `yourgithubusername.jpg`.
+**Post content goes here.**
+```
 
-   > **Note**: Capitalization does not matter for the image file, make it all lower-case.
 
-That's it! You have successfully added a post to DevTweet. Commit your changes and create a pull request to merge your post into the original repository. Once the pull request is accepted and merged, your post will be live on DevTweet.
+#### Adding an Author
+
+Go to  `src/util/authors.ts` file. just extend the array by adding your author username. Make sure it is in lowercase.
+
+```ts
+// Before:
+export const AUTHORS = ["oyepriyansh",
+  "william"];
+
+// After:
+export const AUTHORS = ["oyepriyansh",
+  "william",
+  "your-author-username"];
+```
+
+#### Author Image
+
+You can add an image for yourself by uploading an image to the `/public/authors` directory. 
+Please make sure to rename the image exact same as your author username in the `src/util/authors.ts` file.
+
+> **Note**:  Capitalization does not matter for the image file, but still make it all lowercase.
+</details>
+
+8.  After done you can now push this changes, for doing that follow the following command in order
+
+- `git add --all` (will add all the files to staging area)
+- `git commit -m "<commit message>"`
+> **Note**: replace the `<commit message>` with a good commit message, for example if you are adding a new post; the commit message will be **feat: new post by your-name`**.
+- `git push origin newpost`
+
+9.  After this go to your forked GitHub repository. Now you will see a popup saying **Compare & pull request**, click on it and create a pull request. <br>
+    [![Compare & pull request](https://oyepriyansh.pages.dev/i/e98th7898r9h.png)](https://github.com/oyepriyansh/DevTweet/pulls) <br>
+    **Make sure to add a good PR title, example: `feat: new post by your-name`.** 
+
+That’s it! You have successfully contributed to DevTweet. Once the pull request is accepted and merged, your post will be live on DevTweet.
 
 **Happy coding!**
