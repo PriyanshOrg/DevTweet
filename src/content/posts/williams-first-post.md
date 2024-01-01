@@ -8,4 +8,4 @@ createdAt: July 17, 2023
 
 Hi there, this is my first post on DevTweet!
 
-Follow me on GitHub: https://github.com/WilliamDavidHarrison
+Follow me on GitHub: https://github.com/wdhdev
