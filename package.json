@@ -13,7 +13,7 @@
 		"@astrojs/mdx": "^0.17.2",
 		"@astrojs/react": "^3.0.8",
 		"@heroicons/react": "^2.1.1",
-		"@types/react": "^18.2.45",
+		"@types/react": "^18.2.47",
 		"@types/react-dom": "^18.2.18",
 		"@unocss/reset": "^0.58.0",
 		"astro": "^2.10.15",
