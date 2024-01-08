@@ -154,3 +154,7 @@ ol > li::marker {
 .hideBtn {
   display: none;
 }
+
+.active {
+  color: rgb(96 165 250);
+}
