@@ -7,6 +7,9 @@ import {
 } from "@heroicons/react/24/solid";
 
 import ThemeToggle from "./ThemeToggle";
+
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
 ---
 
 <header class="sticky z-10 top-4">
@@ -19,7 +22,7 @@ import ThemeToggle from "./ThemeToggle";
       <div class="justify-between items-center w-screen flex font-semibold">
          <a
           href="/"
-          class="hover:(no-underline  hover:text-blue-400)"
+          class=`${currentPath === '' && 'active'} hover:(no-underline  hover:text-blue-400)`
         >
           <div class="flex items-center justify-center gap-1">
             <HomeIcon className="h-6 hover:text-blue-400" />
@@ -33,7 +36,7 @@ import ThemeToggle from "./ThemeToggle";
 
         <a
           href="/posts"
-          class="hover:(no-underline  hover:text-blue-400)"
+          class=`${currentPath === 'posts' && 'active'} hover:(no-underline  hover:text-blue-400)`
         >
           <div
             class="flex items-center justify-center gap-1"
@@ -48,7 +51,7 @@ import ThemeToggle from "./ThemeToggle";
         </a>
         <a
           href="/authors"
-          class="hover:(no-underline  hover:text-blue-400)"
+          class=`${currentPath === 'authors' && 'active'} hover:(no-underline  hover:text-blue-400)`
         >
           <div class="flex items-center justify-center gap-1">
             <UserGroupIcon className="h-6 hover:text-blue-400" />
