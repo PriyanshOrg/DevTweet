@@ -1,6 +1,5 @@
 export const AUTHORS = [
   "oyepriyansh",
-  "william",
   "abrarlala",
   "prashantjagtap2909",
   "iamdiksha",
