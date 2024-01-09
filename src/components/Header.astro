@@ -8,8 +8,10 @@ import {
 
 import ThemeToggle from "./ThemeToggle";
 
-const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname.slice(1);
+const url = new URL(Astro.request.url).pathname;
+const segments = url.split('/');
+const lastSegment = segments.filter(Boolean).pop();
+const currentPath = lastSegment || '';
 ---
 
 <header class="sticky z-10 top-4">
