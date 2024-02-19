@@ -25,6 +25,6 @@
 	"devDependencies": {
 		"typescript": "^5.3.3",
 		"unocss": "^0.50.8",
-		"unocss-preset-scrollbar": "^0.3.0"
+		"unocss-preset-scrollbar": "^0.3.1"
 	}
 }
