@@ -28,8 +28,8 @@ Please see the [CONTRIBUTING.md](https://github.com/oyepriyansh/DevTweet/blob/ma
 ## 🆘 Need Help?
 Join our discord server for any kind of help. <br>
 
-<a href="https://discord.com/invite/2aAdfJHSWR">
-  <img src="https://invidget.switchblade.xyz/2aAdfJHSWR" alt="Discord Server">
+<a href="https://discord.com/invite/AeAjegXn6D">
+  <img src="https://invidget.switchblade.xyz/AeAjegXn6D" alt="Discord Server">
 </a>
 
 ## 🙏 Support
@@ -39,4 +39,4 @@ Don't forget to leave a star ⭐
 We would like to acknowledge and give credit to [DuroCodes](https://github.com/DuroCodes), [shakenbird](https://github.com/shakenbirdhttps://github.com/shakenbird), and [ImagineGamingPlay](https://github.com/ImagineGamingPlay) for their contributions to this project. Specifically, we have used code from their repository
 
 ## 💳 Author
-> <a href="https://x.com/oyepriyansh">Priyansh Prajapat (@oyepriyansh)</a>
+> <a href="https://oyepriyansh.github.io">Priyansh Prajapat (@oyepriyansh)</a>
