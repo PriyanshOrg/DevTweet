@@ -35,6 +35,9 @@ Join our discord server for any kind of help. <br>
 ## 🙏 Support
 Don't forget to leave a star ⭐
 
+<a href="#"> <img src="https://oyepriyansh.pages.dev/i/895dfb4d98fgcf5e.gif" alt="star repo gif"> </a>
+
+
 ## 💳 Credits
 We would like to acknowledge and give credit to [DuroCodes](https://github.com/DuroCodes), [shakenbird](https://github.com/shakenbirdhttps://github.com/shakenbird), and [ImagineGamingPlay](https://github.com/ImagineGamingPlay) for their contributions to this project. Specifically, we have used code from their repository
 
